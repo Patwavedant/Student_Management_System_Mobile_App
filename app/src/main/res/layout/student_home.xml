@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="382dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Student Home"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/eng"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/shp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_chainStyle="spread_inside"
+        app:srcCompat="@drawable/engineering" />
+
+    <GridLayout
+        android:id="@+id/shp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:columnCount="3"
+        android:padding="32dp"
+        android:rowCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/eng">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/mrprofile"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="241dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="108dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/examschedule"
+            tools:layout_editor_absoluteX="143dp"
+            tools:layout_editor_absoluteY="241dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="105dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/timetable"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="241dp" />
+
+        <Button
+            android:id="@+id/mp"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="My Profile"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="39dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+        <Button
+            android:id="@+id/es"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="ExamSchedule"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="146dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+        <Button
+            android:id="@+id/tt"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="TimeTable"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textSize="12dp"
+            tools:layout_editor_absoluteX="286dp"
+            tools:layout_editor_absoluteY="317dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/circular"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="364dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="112dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/faq"
+            tools:layout_editor_absoluteX="137dp"
+            tools:layout_editor_absoluteY="364dp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="95dp"
+            android:layout_height="70dp"
+            app:srcCompat="@drawable/myattendance"
+            tools:layout_editor_absoluteX="267dp"
+            tools:layout_editor_absoluteY="364dp" />
+
+        <Button
+            android:id="@+id/c"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="Circular"
+
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="438dp" />
+
+        <Button
+            android:id="@+id/faq"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="50dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:text="FAQ"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:layout_editor_absoluteX="179dp"
+            tools:layout_editor_absoluteY="438dp" />
+
+        <Button
+            android:id="@+id/ma"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="104dp"
+            android:layout_height="58dp"
+            android:layout_row="0"
+            android:text="My Attendance"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            tools:layout_editor_absoluteX="274dp"
+            tools:layout_editor_absoluteY="438dp" />
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
